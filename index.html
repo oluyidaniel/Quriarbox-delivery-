@@ -6,27 +6,35 @@
   <link rel="shortcut icon" href="./Assets/Frame 3.svg" type="image/x-icon">
   <link href="./dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-  integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
-  integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Quriarbox</title>
-    <style>
+  <style>
     /* Orange pill dots like your mock */
     .swiper-pagination-bullet {
-      width: 10px; height: 10px; border-radius: 9999px;
-      background: #fb923c;            /* Tailwind orange-400 */
-      opacity: .35; transition: all .2s ease;
+      width: 10px;
+      height: 10px;
+      border-radius: 9999px;
+      background: #fb923c;
+      /* Tailwind orange-400 */
+      opacity: .35;
+      transition: all .2s ease;
     }
+
     .swiper-pagination-bullet-active {
-      width: 22px; height: 10px; opacity: 1;
-      border-radius: 9999px; background: #fb923c;
+      width: 22px;
+      height: 10px;
+      opacity: 1;
+      border-radius: 9999px;
+      background: #fb923c;
     }
   </style>
 </head>
-<body>
+<body class="bg-[#FFEDC9]">
   <header class="bg-[#FFEDC9] text-white min-h-screen relative z-0">
     <nav class="flex justify-between items-center p-4 bg-white  shadow-md px-50 absolute top-0 left-0 w-full z-10">
       <div class="flex items-center space-x-2">
@@ -35,7 +43,7 @@
       </div>
       <div class="flex items-center space-x-4 gap-4">
         <ul class="flex space-x-4 text-gray-700 text-sm">
-          <a href="">
+          <a href="./">
             <li>Home</li>
           </a>
           <a href="">
@@ -62,8 +70,8 @@
           <p class="text-[#261134] text-3xl">A trusted provider of</p>
           <p class="text-4xl text-[#261134] font-bold">courier services.</p>
           <p class="text-sm text-black pt-3">We deliver your products safely to your home in a reasonable time.</p>
-          <button class="bg-[#F95C19] text-white px-4 py-1 rounded mt-5">Get started <i
-            class="fa-solid fa-arrow-right"></i></button>
+          <button class="bg-[#F95C19] text-white px-4 py-1 rounded mt-5 cursor-pointer">Get started <i
+              class="fa-solid fa-arrow-right"></i></button>
         </div>
         <div>
           <img src="./Assets/Illustration.svg" alt="" class="max-w-[100%] w-[750px] h-auto">
@@ -71,368 +79,383 @@
       </div>
     </section>
   </header>
-
   <section class="h-auto bg-[#FFEDC9] px-50">
     <div class="text-center">
       <h2 class="text-2xl font-bold">SERVICES</h2>
       <p class="pb-10 font-bold text-2xl text-[#F95C19]">Our services for you</p>
     </div>
-    <div class="flex justify-between">
-      <div class="w-75 h-auto bg-red-300">
-          <img src="./Assets/bussiness icon.svg" alt="" class="w-17 h-17">
-        <h2>Business Services</h2>
-        <p>We give you complete reliable delivery for your company.
+
+    <div class="flex gap-5">
+      <div class="w-full h-auto bg-white rounded-xl p-10">
+        <img src="./Assets/bussiness icon.svg" alt="" class="w-15 h-15 m-auto mb-5">
+        <h2 class="text-center text-xl mb-5 font-bold text-[#464558]">Business Services</h2>
+        <p class="text-sm mb-5 text-[#7B7A8B]">We give you complete reliable delivery for your company.
           We will take full responsibility of the deliveries.</p>
-        <div>
-          <div>
-            <div class="flex ">
+        <div class="mb-5">
+          <div class="">
+            <div class="flex gap-2 pb-2">
               <img src="./Assets/circle.svg" alt="">
-              <p>Corporate goods</p>
+              <p class="text-[#7B7A8B]">Corporate goods</p>
             </div>
-            <div class="flex">
+            <div class="flex gap-2 pb-2">
               <img src="./Assets/circle.svg" alt="">
-              <p>Shipment</p>
+              <p class="text-[#7B7A8B]">Shipment</p>
             </div>
-            <div class="flex">
+            <div class="flex gap-2 pb-2">
               <img src="./Assets/circle.svg" alt="">
-              <p>Accesories</p>
+              <p class="text-[#7B7A8B]">Accesories</p>
             </div>
-          </div>
+          </div >
         </div>
-        <button>Learn more</button>
+        <button class="w-full border rounded p-1 text-[#F95C19] font-bold">Learn more</button>
       </div>
-      
-      <div class="w-75 h-auto bg-red-300">
+
+      <div class="w-full h-auto bg-white rounded-xl p-10">
         <div class="">
-          <img src="./Assets/Icon2.svg" alt="">
+          <img src="./Assets/Icon2.svg" alt="" class="w-15 h-15 m-auto mb-5">
         </div>
-        <h2>Business Services</h2>
-        <p>We give you complete reliable delivery for your company.
-          We will take full responsibility of the deliveries.</p>
+        <h2 class="text-center text-xl mb-5 font-bold text-[#464558]">Statewide Services</h2>
+        <p class="text-sm mb-5 text-[#7B7A8B]">Offering home delivery around the city, where your products will be at your doorstep within 48-72 hours.</p>
         <div>
-          <div>
-            <div class="flex">
+          <div class="mb-5">
+            <div class="flex gap-2 pb-2">
               <img src="./Assets/circle.svg" alt="">
-              <p>Corporate goods</p>
+              <p class="text-[#7B7A8B]">Personal items</p>
             </div>
-            <div class="flex">
+            <div class="flex gap-2 pb-2">
               <img src="./Assets/circle.svg" alt="">
-              <p>Shipment</p>
+              <p class="text-[#7B7A8B]">Percels</p>
             </div>
-            <div class="flex">
+            <div class="flex gap-2 pb-2">
               <img src="./Assets/circle.svg" alt="">
-              <p>Accesories</p>
+              <p class="text-[#7B7A8B]">Documents</p>
             </div>
           </div>
         </div>
-        <button>Learn more</button>
+        <button class="w-full bg-[#F95C19] rounded p-1 text-white font-bold">Learn more</button>
       </div>
-      <div class="w-75 h-auto bg-red-300">
+      <div class="w-full h-auto bg-white rounded-xl p-10">
         <div class="">
-          <img src="./Assets/personal icons.svg" alt="">
+          <img src="./Assets/personal icons.svg" alt="" class="w-15 h-15 m-auto mb-5">
         </div>
-        <h2>Business Services</h2>
-        <p>We give you complete reliable delivery for your company.
-          We will take full responsibility of the deliveries.</p>
+        <h2 class="text-center text-xl mb-5 font-bold text-[#464558]">Personal Services</h2>
+        <p class="text-sm mb-5 text-[#7B7A8B]">You can trust us to safely deliver your most sensitive documents to the specific area in a short time.</p>
         <div>
-          <div>
-            <div class="flex">
+          <div class="mb-5">
+            <div class="flex gap-2 pb-2">
               <img src="./Assets/circle.svg" alt="">
-              <p>Corporate goods</p>
+              <p class="text-[#7B7A8B]">Gifts</p>
             </div>
-            <div class="flex">
+            <div class="flex gap-2 pb-2">
               <img src="./Assets/circle.svg" alt="">
-              <p>Shipment</p>
+              <p class="text-[#7B7A8B]">Package</p>
             </div>
-            <div class="flex">
+            <div class="flex gap-2 pb-2">
               <img src="./Assets/circle.svg" alt="">
-              <p>Accesories</p>
+              <p class="text-[#7B7A8B]">Documents</p>
             </div>
           </div>
         </div>
-        <button>Learn more</button>
+        <button class="w-full border rounded p-1 text-[#F95C19] font-bold">Learn more</button>
+      </div>
+    </div>
+  </section>
+  <section class=" bg-[#FFEDC9] px-50 py-10">
+    <div class="flex justify-between pt-25">
+      <div class=" text-center justify-center items-center">
+        <img src="./Assets/cup.svg" alt="" srcset="" class="w-15 h-15 m-auto">
+        <h1 class="font-bold text-2xl text-[#F95C19]">26+</h1>
+        <p class="text-xs font-bold ">Awards won</p>
+      </div>
+
+      <div class="text-center justify-center items-center">
+        <img src="./Assets/IconSpace.svg" alt="" srcset="" class="w-15 h-15 m-auto">
+        <h1 class="font-bold text-2xl text-[#F95C19]">65+</h1>
+        <p class="text-xs font-bold">States covered</p>
+      </div>
+
+      <div class="text-center justify-center items-center">
+        <img src="./Assets/user.svg" alt="" srcset="" class="w-15 h-15 m-auto">
+        <h1 class="font-bold text-2xl text-[#F95C19]">689K+</h1>
+        <p class="text-xs font-bold">Happy clients</p>
+      </div>
+
+      <div class="text-center justify-center items-center">
+        <img src="./Assets/bus.svg" alt="" srcset="" class="w-15 h-15 m-auto">
+        <h1 class="font-bold text-2xl text-[#F95C19]">130M+</h1>
+        <p class="text-xs font-bold">Goods delivered</p>
+      </div>
+
+      <div class="text-center justify-center items-center">
+        <img src="./Assets/bag.svg" alt="" srcset="" class="w-15 h-15 m-auto">
+        <h1 class="font-bold text-2xl text-[#F95C19]">130M+</h1>
+        <p class="text-xs font-bold">Business hours</p>
       </div>
     </div>
   </section>
 
-  <section class="h-screen bg-[#FFEDC9] px-50">
-    <div class="flex justify-between">
-      <div>
-        <img src="./img/cup.svg" alt="" srcset="">
-        <h1>26+</h1>
-        <p>Awards  won</p>
-      </div>
-      <div>
-        <img src="./img/IconSpace.svg" alt="" srcset="">
-        <h1>65x +</h1>
-        <p>States covered</p>
-      </div>
-      <div>
-        <img src="./img/user.svg" alt="" srcset="">
-        <h1>689K+</h1>
-        <p>Happy clients</p>
-      </div>
-      <div>
-        <img src="./img/bus.svg" alt="" srcset="">
-        <h1>130M+</h1>
-        <p>Goods delivered</p>
-      </div>
-      <div>
-        <img src="./img/bag.svg" alt="" srcset="">
-        <h1>130M+</h1>
-        <p>Business hours</p>
+  <section class="relative max-w-6xl mx-auto my-12  ">
+    <!-- Video / Image Background -->
+    <div class="relative w-full h-[580px] rounded-xl overflow-hidden">
+      <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+        <source src="./Assets/video/4169341-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        <!-- Fallback image -->
+        <img src="your-thumbnail.jpg" alt="Fastest Delivery" class="w-full h-full object-cover">
+      </video>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/8x0 flex flex-col justify-center items-center text-center text-white px-6">
+        <!-- Play Button -->
+        <button
+          class="w-16 h-16 flex items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M6.79 5.093l4.2 2.4a.5.5 0 0 1 0 .866l-4.2 2.4A.5.5 0 0 1 6 10.4V5.6a.5.5 0 0 1 .79-.407z" />
+          </svg>
+        </button>
+
+        <!-- Text -->
+        <h3 class="mt-6 text-2xl font-bold text-orange-500">FASTEST DELIVERY</h3>
+        <p class="mt-2 max-w-2xl">
+          You can get your valuable item in the fastest period of time with safety.
+          Because your emergency is our first priority.
+        </p>
       </div>
     </div>
   </section>
-  
-  <section class="relative max-w-6xl mx-auto my-12">
-  <!-- Video / Image Background -->
-  <div class="relative w-full h-[580px] rounded-xl overflow-hidden">
-    <video class="w-full h-full object-cover" autoplay muted loop playsinline>
-      <source src="./Assets/video/4169341-uhd_3840_2160_25fps.mp4" type="video/mp4">
-      <!-- Fallback image -->
-      <img src="your-thumbnail.jpg" alt="Fastest Delivery" class="w-full h-full object-cover">
-    </video>
 
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white px-6">
-      <!-- Play Button -->
-      <button class="w-16 h-16 flex items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M6.79 5.093l4.2 2.4a.5.5 0 0 1 0 .866l-4.2 2.4A.5.5 0 0 1 6 10.4V5.6a.5.5 0 0 1 .79-.407z"/>
-        </svg>
-      </button>
-
-      <!-- Text -->
-      <h3 class="mt-6 text-2xl font-bold text-orange-500">FASTEST DELIVERY</h3>
-      <p class="mt-2 max-w-2xl">
-        You can get your valuable item in the fastest period of time with safety. 
-        Because your emergency is our first priority.
-      </p>
+  <section>
+    <div class="flex justify-center items-center gap-2.5">
+      <img src="./Assets/Quote icon.png" alt="" class="w-25 h-25">
+      <div class="text-center">
+        <span class="text-[#F95C19] font-bold text-2xl">TESTIMONIAL</span>
+        <p class="text-3xl font-black ">Our Awesome Clients</p>
+      </div>
     </div>
-  </div>
-</section>
 
-<section>
-  <div class="flex justify-center items-center">
-    <img src="./Assets/Quote icon.png" alt="">
-    <div>
-      <span>TESTIMONIAL</span>
-      <p>Our Awesome Clients</p>
-    </div>
-  </div>
+    
     <section class="py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Our Clients Say</h2>
-
-      <!-- Slider container -->
-      <div class="relative">
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <article class="bg-white rounded-2xl shadow-lg p-6 max-w-lg mx-auto">
-                <h3 class="text-orange-600 font-semibold mb-3">Fantastic service!</h3>
-                <p class="text-gray-600 mb-5">
-                  Phone arrived in a day. Real-time tracking and helpful support. Super reliable.
-                </p>
-                <div class="flex items-center gap-3">
-                  <img src="https://i.pravatar.cc/60?img=12" class="w-10 h-10 rounded-full" alt="">
-                  <div>
-                    <p class="font-semibold">Yves Tanguy</p>
-                    <p class="text-sm text-gray-500">Chief Executive, DLF</p>
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Slider container -->
+        <div class="relative">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide -->
+              <div class="swiper-slide">
+                <article class="bg-white rounded-2xl shadow-lg p-6  mx-auto">
+                  <h3 class="text-orange-600 font-semibold mb-3">Fantastic service!</h3>
+                  <p class="text-gray-600 mb-5">
+                    Phone arrived in a day. Real-time tracking and helpful support. Super reliable.
+                  </p>
+                  <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/60?img=12" class="w-10 h-10 rounded-full" alt="">
+                    <div>
+                      <p class="font-semibold">Yves Tanguy</p>
+                      <p class="text-sm text-gray-500">Chief Executive, DLF</p>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="bg-white rounded-2xl shadow-lg p-6 max-w-lg mx-auto">
+                  <h3 class="text-orange-600 font-semibold mb-3">Quick & Safe!</h3>
+                  <p class="text-gray-600 mb-5">
+                    Parcel delivered in <span class="font-medium">less than 24h</span>. Smooth tracking end-to-end.
+                  </p>
+                  <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/60?img=32" class="w-10 h-10 rounded-full" alt="">
+                    <div>
+                      <p class="font-semibold">Maria Lopez</p>
+                      <p class="text-sm text-gray-500">Business Owner</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="bg-white rounded-2xl shadow-lg p-6 max-w-lg mx-auto">
+                  <h3 class="text-orange-600 font-semibold mb-3">Reliable Partner</h3>
+                  <p class="text-gray-600 mb-5">
+                    We ship with Quriarbox weekly. Never missed a deadline. Customers love it.
+                  </p>
+                  <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/60?img=5" class="w-10 h-10 rounded-full" alt="">
+                    <div>
+                      <p class="font-semibold">James Smith</p>
+                      <p class="text-sm text-gray-500">E-commerce Seller</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Duplicate a few for the loop -->
+              <div class="swiper-slide">
+                <article class="bg-white rounded-2xl shadow-lg p-6 max-w-lg mx-auto">
+                  <h3 class="text-orange-600 font-semibold mb-3">Five Stars ⭐⭐⭐⭐⭐</h3>
+                  <p class="text-gray-600 mb-5">
+                    Couriers were polite and careful with fragile items. Highly recommended.
+                  </p>
+                  <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/60?img=24" class="w-10 h-10 rounded-full" alt="">
+                    <div>
+                      <p class="font-semibold">Aisha Bello</p>
+                      <p class="text-sm text-gray-500">Retail Manager</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
             </div>
 
-            <div class="swiper-slide">
-              <article class="bg-white rounded-2xl shadow-lg p-6 max-w-lg mx-auto">
-                <h3 class="text-orange-600 font-semibold mb-3">Quick & Safe!</h3>
-                <p class="text-gray-600 mb-5">
-                  Parcel delivered in <span class="font-medium">less than 24h</span>. Smooth tracking end-to-end.
-                </p>
-                <div class="flex items-center gap-3">
-                  <img src="https://i.pravatar.cc/60?img=32" class="w-10 h-10 rounded-full" alt="">
-                  <div>
-                    <p class="font-semibold">Maria Lopez</p>
-                    <p class="text-sm text-gray-500">Business Owner</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="swiper-slide">
-              <article class="bg-white rounded-2xl shadow-lg p-6 max-w-lg mx-auto">
-                <h3 class="text-orange-600 font-semibold mb-3">Reliable Partner</h3>
-                <p class="text-gray-600 mb-5">
-                  We ship with Quriarbox weekly. Never missed a deadline. Customers love it.
-                </p>
-                <div class="flex items-center gap-3">
-                  <img src="https://i.pravatar.cc/60?img=5" class="w-10 h-10 rounded-full" alt="">
-                  <div>
-                    <p class="font-semibold">James Smith</p>
-                    <p class="text-sm text-gray-500">E-commerce Seller</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Duplicate a few for the loop -->
-            <div class="swiper-slide">
-              <article class="bg-white rounded-2xl shadow-lg p-6 max-w-lg mx-auto">
-                <h3 class="text-orange-600 font-semibold mb-3">Five Stars ⭐⭐⭐⭐⭐</h3>
-                <p class="text-gray-600 mb-5">
-                  Couriers were polite and careful with fragile items. Highly recommended.
-                </p>
-                <div class="flex items-center gap-3">
-                  <img src="https://i.pravatar.cc/60?img=24" class="w-10 h-10 rounded-full" alt="">
-                  <div>
-                    <p class="font-semibold">Aisha Bello</p>
-                    <p class="text-sm text-gray-500">Retail Manager</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-
+            <!-- Pagination (dots) -->
+            <div class="swiper-pagination mt-8 !static"></div>
           </div>
 
-          <!-- Pagination (dots) -->
-          <div class="swiper-pagination mt-8 !static"></div>
+          <!-- Optional fade edges like your shot -->
+          <div
+            class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-orange-50 to-transparent">
+          </div>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-orange-50 to-transparent">
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="flex gap-1 justify-center px-80">
+    <div class="">
+      <img src="./Assets/Group 56.png" alt="">
+      <span class="text-[#F95C19] font-bold text-lg">REQUEST A CALLBACK</span>
+      <p class="text-[#222132] text-3xl font-bold">We will contact in the shortest time.</p> 
+      <p>Monday to Friday, 9am-5pm.</p>
+    </div>
+
+    <div>
+      <form class="flex flex-col space-y-4 w-90">
+        <input type="text" placeholder="Your Name" class="p-2 border rounded w-full">
+        <input type="email" placeholder="Your Email" class="p-2 border rounded">
+        <input type="tel" placeholder="Your Phone Number" class="p-2 border rounded">
+        <textarea placeholder="Your Message" class="p-2 border rounded h-24"></textarea>
+        <button type="submit" class="bg-orange-500 text-white p-2 rounded hover:bg-orange-600 transition">Request
+          Callback </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="mb-30">
+    <div class="text-center my-15">
+      <span class="font-bold text-[#F95C19] text-2xl">FIND US</span>
+      <p class="font-bold text-2xl text-[#222132]">Access us easily</p>
+    </div>
+
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-6 bg-white rounded-2xl shadow-lg overflow-hidden">
+
+        <!-- Left: Map -->
+        <div class="w-full h-80">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49239.059184004305!2d-117.21191280703881!3d32.73990924184849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80deaa60b159eb77%3A0xb8b8a676d2bbc3fe!2sSeaWorld%20San%20Diego!5e0!3m2!1sen!2sng!4v1755528701189!5m2!1sen!2sng"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <!-- Optional fade edges like your shot -->
-        <div class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-orange-50 to-transparent"></div>
-        <div class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-orange-50 to-transparent"></div>
+        <!-- Right: Contact Info --->
+        <div class="flex flex-col justify-center p-8">
+          <h2 class="text-2xl font-bold mb-4">Contact with us</h2>
+
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-orange-500 mr-3">📍</span>
+              227 Loren Ave, San Diego, CA 22553
+            </li>
+            <li class="flex items-start">
+              <span class="text-orange-500 mr-3">⏰</span>
+              Monday - Friday: 10am - 10pm <br>
+              Sunday: 8am - 9pm
+            </li>
+            <li class="flex items-start">
+              <span class="text-orange-500 mr-3">✉️</span>
+              info@quriarbox.com
+            </li>
+          </ul>
+
+          <!-- Social Links -->
+          <div class="flex mt-4 space-x-4">
+            <a href="#" class="text-gray-500 hover:text-orange-500">🌐</a>
+            <a href="#" class="text-gray-500 hover:text-orange-500">📘</a>
+            <a href="#" class="text-gray-500 hover:text-orange-500">📸</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Button -->
+      <div class="mt-6 flex justify-center">
+        <a href="tel:123456789"
+          class="bg-orange-500 hover:bg-orange-600 text-white px-15 py-3 rounded font-medium shadow-md transition">
+          Call us to delivery 123-456789
+        </a>
       </div>
     </div>
   </section>
-</section>
 
-<section class="flex items-center bg-[#FFEDC9] px-50 py-10 justify-center">
-  <div>
-      <img src="./Assets/Group 56.png" alt="">
-      <span>REQUEST A CALLBACK</span>
-      <p>We will contact in the shortest time.</p>
-      <p>Monday to Friday, 9am-5pm.</p>
-  </div>
-  <div>
-    <form class="flex flex-col space-y-4">
-      <input type="text" placeholder="Your Name" class="p-2 border rounded">
-      <input type="email" placeholder="Your Email" class="p-2 border rounded">
-      <input type="tel" placeholder="Your Phone Number" class="p-2 border rounded">
-      <textarea placeholder="Your Message" class="p-2 border rounded h-24"></textarea>
-      <button type="submit" class="bg-orange-500 text-white p-2 rounded hover:bg-orange-600 transition">Request Callback </button>
-    </form>
-  </div>
-</section>
+  <footer class="bg-[#222132] py-6">
+    <div class="flex gap-60 py-15  px-50" >
+      <div>
+        <h2 class="text-lg font-bold text-[#F95C19]">Get an update every week</h2>
+        <p class="text-xs text-[#C5C5D2]">We ensure that your product is delivered in the safest possible manner, at the correct location, at the right
+          time.</p>
+      </div>
+      <div>
+        <p class="text-lg font-bold text-[#F95C19]">SUBSCRIBE TO NEWSLETTER</p>
+        <form class="flex space-x-2">
+          <input type="email" placeholder="Enter your email" class="p-2 border rounded w-64">
+          <button type="submit"
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition font-bold">Subscribe</button>
+        </form>
+      </div>
+    </div>
 
-<section>
-  <div>
-    <span>FIND US</span>
-    <p>Access us easily</p>
-  </div>
-
-   <div class="container mx-auto px-4">
-    <div class="grid md:grid-cols-2 gap-6 bg-white rounded-2xl shadow-lg overflow-hidden">
-      
-      <!-- Left: Map -->
-      <div class="w-full h-80">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49239.059184004305!2d-117.21191280703881!3d32.73990924184849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80deaa60b159eb77%3A0xb8b8a676d2bbc3fe!2sSeaWorld%20San%20Diego!5e0!3m2!1sen!2sng!4v1755528701189!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="bg-[#2F2E41] flex px-50 gap-55 py-10">
+      <div>
+        <div class="flex items-center text-center">
+          <img src="./Assets/Frame 3.svg" alt="">
+          <p class="text-white text-lg">Quriarbox</p>
+        </div> 
+        <p class="text-sm text-[#C5C5D2]">The most trusted Courier<br>
+          company in your area.</p>
       </div>
 
-      <!-- Right: Contact Info -->
-      <div class="flex flex-col justify-center p-8">
-        <h2 class="text-2xl font-bold mb-4">Contact with us</h2>
-        
-        <ul class="space-y-3 text-gray-600">
-          <li class="flex items-start">
-            <span class="text-orange-500 mr-3">📍</span>
-            227 Loren Ave, San Diego, CA 22553
-          </li>
-          <li class="flex items-start">
-            <span class="text-orange-500 mr-3">⏰</span>
-            Monday - Friday: 10am - 10pm <br>
-            Sunday: 8am - 9pm
-          </li>
-          <li class="flex items-start">
-            <span class="text-orange-500 mr-3">✉️</span>
-            info@quriarbox.com
-          </li>
-        </ul>
-
-        <!-- Social Links -->
-        <div class="flex mt-4 space-x-4">
-          <a href="#" class="text-gray-500 hover:text-orange-500">🌐</a>
-          <a href="#" class="text-gray-500 hover:text-orange-500">📘</a>
-          <a href="#" class="text-gray-500 hover:text-orange-500">📸</a>
+      <div class="flex gap-20">
+        <div>
+          <p class="text-base font-bold text-white mb-4">Other links</p>
+          <p class="text-base mb-0.5 text-[#C5C5D2] hover:text-[#9d9da5]"><a href="">Blogs</a></p>
+          <p class="text-base mb-0.5 text-[#C5C5D2] hover:text-[#9d9da5]"><a href="">Movers website</a></p>
+          <p class="text-base mb-0.5 text-[#C5C5D2] hover:text-[#9d9da5]"><a href="text-base">Traffic Update</a></p>
+        </div>
+        <div>
+          <p class="text-xm font-bold text-white mb-4">Services</p>
+          <p class="text-base mb-0.5 text-[#C5C5D2] hover:text-[#9d9da5]"><a href="">Corporate goods</a></p>
+          <p class="text-base mb-0.5 text-[#C5C5D2] hover:text-[#9d9da5]"><a href="">Artworks</a></p>
+          <p class="text-base mb-0.5 text-[#C5C5D2] hover:text-[#9d9da5]"><a href="">Documents</a></p>
+        </div>
+        <div>
+          <p class="text-xm font-bold text-white mb-4">Customer Care</p>
+          <p class="text-base mb-0.5 text-[#C5C5D2] hover:text-[#9d9da5]"><a href="">About Us</a></p>
+          <p class="text-base mb-0.5 text-[#C5C5D2] hover:text-[#9d9da5]"><a href="">Contact US</a></p>
+          <p class="text-base mb-0.5 text-[#C5C5D2] hover:text-[#9d9da5]"><a href="">Get Update</a></p>
         </div>
       </div>
     </div>
-
-    <!-- Bottom Button -->
-    <div class="mt-6 flex justify-center">
-      <a href="tel:123456789"
-        class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium shadow-md transition">
-        Call us to delivery 123-456789
-      </a>
+    <div class="px-50 flex justify-between">
+      <p>All rights Reserved © Your Company, 2021</p>
+      <p>Made with heart by <span class="text-[#F95C19] mt-0.5">ThemeWagon</span></p>
     </div>
-  </div>
-</section>
 
-<footer>
-<div>
-  <div>
-    <h2>Get an update every week</h2>
-    <p>We ensure that your product is delivered in the safest possible manner, at the correct location, at the right time.</p>
-  </div>
-  <div>
-    <p>SUBSCRIBE TO NEWSLETTER</p>
-    <form class="flex space-x-2">
-      <input type="email" placeholder="Enter your email" class="p-2 border rounded w-64">
-      <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">Subscribe</button>
-    </form>
-  </div>
-</div>
+  </footer>
 
-<div>
-  <div>
-  <img src="./Assets/Frame 3.svg" alt="">
-  <p>The most trusted Courier
-  company in your area.</p>
-</div>
-<div>
-  <div>
-    <p>Other links</p>
-    <a href="">Blogs</a>
-    <a href="">Movers website</a>
-    <a href="">Traffic Update</a>
-  </div>
-  <div>
-    <p>Services</p>
-    <a href="">Corporate goods</a>
-    <a href="">Artworks</a>
-    <a href="">Documents</a>
-  </div>
-  <div>
-    <p>Customer Care</p>
-    <a href="">About Us</a>
-    <a href="">Contact US</a>
-    <a href="">Get Update</a>
-  </div>
-</div>
-</div>
-<div>
-  <p>All rights Reserved © Your Company, 2021</p>
-  <p>Made with heart by <span>ThemeWagon</span></p>
-</div>
-
-</footer>
-
-<script>
+  <script>
     // Ensure the DOM & Swiper are loaded
     document.addEventListener('DOMContentLoaded', function () {
       new Swiper('.mySwiper', {
@@ -446,12 +469,13 @@
         },
         breakpoints: {
           768: { slidesPerView: 2 },
-          1024:{ slidesPerView: 3 }
+          1024: { slidesPerView: 3 }
         }
       });
     });
   </script>
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+
 </html>
