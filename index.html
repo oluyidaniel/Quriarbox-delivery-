@@ -335,11 +335,11 @@
 
     <div>
       <form class="flex flex-col space-y-4 w-90">
-        <input type="text" placeholder="Your Name" class="p-2 border rounded w-full">
-        <input type="email" placeholder="Your Email" class="p-2 border rounded">
-        <input type="tel" placeholder="Your Phone Number" class="p-2 border rounded">
-        <textarea placeholder="Your Message" class="p-2 border rounded h-24"></textarea>
-        <button type="submit" class="bg-orange-500 text-white p-2 rounded hover:bg-orange-600 transition">Request
+        <input type="text" placeholder="Your Name" id="name" class="p-2 border rounded w-full">
+        <input type="email" placeholder="Your Email" id="email" class="p-2 border rounded">
+        <input type="tel" placeholder="Your Phone Number" id="phone" class="p-2 border rounded">
+        <textarea placeholder="Your Message" id="message" class="p-2 border rounded h-24"></textarea>
+        <button type="submit" id="submitBtn" class="bg-orange-500 text-white p-2 rounded hover:bg-orange-600 transition">Request
           Callback </button>
       </form>
     </div>
@@ -455,7 +455,8 @@
     </div>
 
   </footer>
-
+<!-- Toast notification -->
+<div id="toast"></div>
   <script>
     // Ensure the DOM & Swiper are loaded
     document.addEventListener('DOMContentLoaded', function () {
@@ -477,6 +478,7 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
